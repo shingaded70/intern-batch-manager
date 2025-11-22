@@ -1,0 +1,11 @@
+com\shingaded70\internmanager\controller\InternController.class
+com\shingaded70\internmanager\model\Batch.class
+com\shingaded70\internmanager\repository\InternRepository.class
+com\shingaded70\internmanager\service\BatchService.class
+com\shingaded70\internmanager\controller\BatchController.class
+com\shingaded70\internmanager\service\InternService.class
+com\shingaded70\internmanager\controller\BatchController$BatchRequest.class
+com\shingaded70\internmanager\InternBatchManagerApplication.class
+com\shingaded70\internmanager\model\Intern.class
+com\shingaded70\internmanager\InternBatchManagerApplication$TestController.class
+com\shingaded70\internmanager\repository\BatchRepository.class

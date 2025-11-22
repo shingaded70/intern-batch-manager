@@ -1,0 +1,13 @@
+package com.shingaded70.internmanager.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class IdGenerator {
+    public static String generateId(LocalDate joinDate, String cardType) {
+        String prefix = "Premium".equalsIgnoreCase(cardType) ? "EMP" : "TDA";
+        String datePart = joinDate.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        // We'll get count from service — placeholder for now
+        return prefix + datePart + "-001"; // will fix in service
+    }
+}

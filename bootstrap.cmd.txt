@@ -1,0 +1,12 @@
+@echo off
+set "WRAPPER_JAR=.mvn\wrapper\maven-wrapper.jar"
+set "URL=https://repo1.maven.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.2/maven-wrapper-3.3.2.jar"
+
+echo Downloading Maven Wrapper from: %URL%
+powershell -Command "& { iwr '%URL%' -UseBasicParsing -OutFile '%WRAPPER_JAR%' }"
+if not exist "%WRAPPER_JAR%" (
+    echo FAILED. Trying alternate URL...
+    set "URL=https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.2/maven-wrapper-3.3.2.jar"
+    powershell -Command "& { iwr '%URL%' -UseBasicParsing -OutFile '%WRAPPER_JAR%' }"
+)
+exit /b 0
